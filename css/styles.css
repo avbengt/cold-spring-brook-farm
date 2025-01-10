@@ -1,0 +1,544 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fonts.com
+*/
+
+/* Reset Styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+
+@font-face{
+	font-family:"Farmhouse W05 Regular";
+	src:url("../fonts/776f4199-b33a-4548-92fe-d079549097b0.eot?#iefix");
+	src:url("../fonts/776f4199-b33a-4548-92fe-d079549097b0.eot?#iefix") format("eot"),
+		url("../fonts/ce67e8fa-bf28-4c2b-874b-b306c3f9a82c.woff2") format("woff2"),
+		url("../fonts/b06f6577-bb62-4e13-a3a8-194350a42c73.woff") format("woff"),
+		url("../fonts/c1491b64-5f00-4cb0-8670-b647fb1ebbb9.ttf") format("truetype");
+}
+
+/* Desktop/Basic Styles */	
+body {
+	font-family: 'Montserrat', serif;
+	line-height: 1.5em;
+	margin: 0;
+	color: #4a362f;
+	background-color: #daddce;
+}
+h1, h2, h3, h4 {
+	font-family: 'Farmhouse W05 Regular', serif;
+	font-weight: normal;
+	margin: 0;
+}
+h1 { 
+	font-size: 2.75em;
+	line-height: 1em;
+	margin: .25em 0;
+}
+h2 {
+	font-size: 2em;
+	line-height: 1em;
+	margin: .25em 0;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .25em 0;
+}
+p {
+	display: block;
+	margin: 1em 0;
+}
+p.note {
+	font-style: italic;
+	margin-top: 0;
+	font-size: .9em;
+	line-height: 1.25em;
+}
+p.disclaimer {
+	font-style: italic;
+	margin-top: 0;
+	font-size: .8em;
+	clear: both;
+}
+a { color: #8a3c3a; font-weight: bold; text-decoration: none; }
+a:hover { color: #9a4947; }
+header {
+	background: url(../images/layout/wainscoting-bg.jpg) repeat;
+	font-family: 'Farmhouse W05 Regular', serif;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+#banner {
+	background-color: #899550;
+	color: #ffffff;
+	font-family: 'Montserrat', serif;
+	font-weight: 600;
+	line-height: 1.5em;
+	text-align: center;
+	padding: .25em 0;
+}
+header a:link {	font-weight: normal; text-decoration: none; }
+.logo {
+	display: block;
+	font-size: 1.75em;
+	line-height: .65em;
+	margin: 0 auto;
+	padding: 1em 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.logo .name { display: inline-block; margin-top: .25em; }
+.logo .subtext { font-size: .75em; }
+.logo img {
+	display: inline-block;
+	width: 3em;
+	margin: 0 auto .25em;
+	vertical-align: middle;
+}
+.logo .est {
+	display: inline-block;
+	font-size: .6em;
+	font-style: italic;
+	text-transform: none;
+} 
+.logo a { color: #4a362f; }
+nav { font-size: 1.4em; }
+.nav { list-style: none; text-align: center; }
+.nav li { display: inline-block; position: relative; }
+.nav li.active, .nav li.active a { background-color: #a45452; color: #ffffff !important; }
+.nav li a { 
+	display: block;
+	color: #393939;
+	padding: .5em .75em;
+	text-align: left;
+}
+.nav li:hover ul {
+	display: block;
+	position: absolute;
+	top: auto;
+	left: 0;
+	height: auto;
+}
+.nav .dropmenu .dropdown a:hover { background-color: #9a4947; }
+.nav li.dropmenu:hover a,
+.nav a:hover a, .nav:hover .dropdown { background-color: #8a3c3a; color: #ffffff; }
+li a:hover,
+.nav .dropdown a:hover { color: #ffffff !important; background-color: #9a4947;}
+.nav .dropdown,
+ul li:hover ul li .dropdown {
+	display: none;
+	min-width: 240px;
+	overflow: visible;
+}
+.nav .dropdown li { display: block; }
+.arrow-down {
+	display: inline-block;
+	font-size: .35em;
+	vertical-align: middle;
+	line-height: 1em;
+}
+.responsive-icon { display: none; }
+.center { text-align: center; }
+.strong { font-weight: 900; }
+.nowrap { white-space: nowrap; }
+main {
+	background: url("../images/layout/footer.png") no-repeat bottom left;
+	background-color: #f2f3ee;
+	margin: 0 auto;
+	max-width: 1200px;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+article {
+	clear: both;
+	padding: 2em 4em;
+	overflow: hidden;
+}
+section {
+	box-sizing: border-box;
+}
+article.hero-home {
+	background: url(../images/home/hero-home.jpg) no-repeat center center;
+	background-color: #f2f3ee;
+	height: 220px;
+	padding: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+article.hero-contact {
+	height: 220px;
+	padding: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+article.hero-contact iframe {
+	height: 220px;
+	width: 1200px;
+	margin: 0 auto;
+}
+article.intro { padding-top: 2em; text-align: center; }
+article.alert { background-color: #CC0000; color: #fff; text-align: center; padding: 1em 4em .5em; max-width: 1200px; margin: 0 auto; box-sizing: border-box; }
+body.home article.intro { padding-top: 4em; padding-bottom: 4em; text-align: left; }
+article.hours-avail { padding-top: 0; }
+article.hours-avail section { display: table-cell; text-align: center; padding: 1em 2em; }
+section.bus-hours { width: 50%; background-color: #ebece5;}
+p.hours-open { color: #68713c; font-weight: bold; margin: 2em 0; }
+p.hours-closed { color: #8a3c3a; font-weight: bold; margin: 2em 0; }
+section.avail { width: 50%; overflow: hidden; }
+section.avail div.list { overflow: hidden; margin-bottom: 1em; }
+ul.avail-list {
+	box-sizing: border-box;
+	float: left;
+	list-style-type: none;
+	padding: 0 1em;
+	text-align: center;
+	width: auto;
+	min-width: 32%;
+	max-width: 50%;
+}
+article.pillars section { float: left; width: 33.3%; text-align: center; }
+article.pillars section img { width: 100%; }
+article.pillars section p { text-align: left; margin-top: .5em; }
+article.pillars .first { padding: 0 1em 0 0; }
+article.pillars .second { padding: 0 .5em; }
+article.pillars .third { padding: 0 0 0 1em; }
+
+/* CONTACT PAGE */
+body.contact section { float: left; padding: 0; }
+body.contact .contact .info { width: 50%; padding: 0 2em 0 4em; box-sizing: border-box; }
+body.contact .contact .info p { margin-top: 0; }
+body.contact .holidays { font-style: italic; }
+body.contact .contact .form { float: right; width: 50%; padding: 0 4em 0 2em; box-sizing: border-box; }
+
+body.contact input[type=text],
+body.contact input[type=email],
+body.contact textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: .5em;
+	padding: .5em;
+	font-family: 'Montserrat', serif;
+	font-size: 1em;
+}
+body.contact input[type=text],
+body.contact input[type=email] {
+	height: 2em;
+	box-sizing: border-box;
+	background-color: #f2f3ee;
+	border: 1px solid #68713c;
+}
+body.contact textarea {
+	height: 12em;
+	box-sizing: border-box;
+	background-color: #f2f3ee;
+	border: 1px solid #68713c;
+}
+body.contact input[type=submit] {
+	font-family: 'Montserrat', serif;
+	font-size: 1em;
+	height: 2em;
+	color: #68713c;
+	background-color: #f2f3ee;
+	border: 1px solid #68713c;
+}
+::placeholder { color: #68713c; font-style: italic; }
+::-webkit-input-placeholder { color: #68713c; font-style: italic; }
+::-moz-placeholder { color: #68713c; font-style: italic; }
+:-ms-input-placeholder { color: #68713c; font-style: italic; }
+:-moz-placeholder { color: #68713c; font-style: italic; }
+#contactSent {
+	float: right;
+	line-height: 2em;
+	font-style: italic;
+	color: green;
+}
+
+/* ABOUT OUR FARM PAGE */
+
+body.our-farm article.about h1 { text-align: center; }
+body.our-farm .history { padding-top: 1em; }
+
+/* NEWS/PRESS PAGE */
+article.hero-news-press {
+	background: url(../images/about/news-press/hero-news.jpg) no-repeat left center;
+	background-color: #f2f3ee;
+	height: 220px;
+	padding: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.news-segment { display: inline-flex; padding: 1em 4em; }
+.news-segment .photo { width: 40%; padding: 0 1em 0 0; box-sizing: border-box; }
+.news-segment .photo img { width: 100%; }
+.news-segment .info { width: 60%; padding: 0 0 0 1em; box-sizing: border-box; }
+
+
+/* ABOUT OUR FARM PAGE */
+article.hero-our-farm {
+	background: url(../images/about/our-farm/hero-our-farm.jpg) no-repeat center center;
+	background-color: #f2f3ee;
+	height: 220px;
+	padding: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+body.our-farm section.our-farm { padding-top: 0; padding-bottom: 1em; }
+.gallery { padding-top: 2em; width: 100%; }
+.gallery img { width: 20%; box-sizing: border-box; padding-right: .5em; }
+
+/* FLOWERS PAGE */
+article.hero-flowers {
+	background: url(../images/what-we-sell/flowers/hero-flowers.jpg) no-repeat left center;
+	background-color: #f2f3ee;
+	height: 220px;
+	padding: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.flower { padding: 1em 4em; }
+.flower .photo { padding: 0 2em 0 0; box-sizing: border-box; float: left; }
+.flower .info { box-sizing: border-box; overflow: hidden; }
+
+#myBtnContainer { margin-top: 3em; margin-bottom: 2em; }
+/* FILTER */
+body.flowers .filterDiv { display: none; }
+
+/* The "show" class is added to the filtered elements */
+body.flowers .show { display: block; }
+
+/* Style the buttons */
+body.flowers .btn {
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  color: #4a362f;
+  background-color: #f2f3ee;
+  cursor: pointer;
+  font-family: 'Montserrat', serif;
+  font-size: 1em;
+}
+body.flowers .btn:hover { color: #8a3c3a; }
+body.flowers .btn.filter-active { color: #ffffff; background-color: #8a3c3a; }
+section.backtotop { padding: 1em 2em; text-align: center; }
+
+
+/* Fancybox Thumbnails */
+@media all and (min-width: 768px) {
+  .fancybox-thumbs {
+    top: auto;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right : 0;
+    height: 95px;
+    padding: 10px 10px 5px 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .fancybox-show-thumbs .fancybox-inner {
+    right: 0;
+    bottom: 95px;
+  }
+}
+
+/* FOOTER */
+footer {
+	background-color: #daddce;
+	box-sizing: border-box;
+	min-height: 100px;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 4em 2em 4em;
+}
+footer a, footer a:hover { color: #4a362f; font-weight: normal; }
+footer section { float: left; padding: 0; }
+footer section.contact { float: left; }
+footer section.contact p { margin: .5em 0; }
+footer section.contact img { width: 1em; vertical-align: middle; margin-right: .25em;}
+footer section.social { float: right; padding-top: 1.25em; }
+footer section.social img { width: 30px; margin-left: .5em; line-height: 60px; }
+
+
+
+/* Strictly desktop-only styles */
+@media (min-width: 769px) {
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content { display: block; }
+}
+
+@media screen and (max-width: 768px) {
+
+  .logo {
+	display: block;
+	float: left;
+	font-size: 1em;
+	line-height: .65em;
+	margin: 0 auto;
+	padding: 1em 1em;
+	text-align: center;
+	text-transform: uppercase;
+  }
+  .logo .subtext { font-size: .75em; }
+  .logo img {
+  	display: inline-block;
+	width: 3em;
+	margin: 0 auto .25em;
+	vertical-align: middle;
+  }
+  .logo .est {
+  	display: inline-block;
+	font-size: .6em;
+	font-style: italic;
+	text-transform: none;
+  } 
+  .logo a { color: #4a362f; }
+  
+  h1 { font-size: 2.25em; }
+  h2 { font-size: 1.75em; }
+  h3 { font-size: 1.25em; }
+  p { display: block; }
+  
+  header { background: url(../images/layout/wainscoting-bg.jpg) repeat; height: 100px; }
+  .nav li { display: none; }
+  .responsive-icon {
+  	color: #8a3c3a;
+	position: absolute;
+	display: block;
+	font-size: 1.25em;
+	padding: 37px 37px;
+	right: 0;
+	top: 0px;
+  }
+  .responsive-icon:hover { color: #8a3c3a; }
+  .nav.responsive {
+  	position: relative;
+	clear: left;
+	float: none;
+	overflow: visible;
+  }
+  .responsive-icon.responsive { color: #ffffff; background-color: #8a3c3a; }
+  #navMenu.responsive li { display: block; }
+  #navMenu.responsive a { float: none; display: block; text-align: left; }
+  #navMenu.responsive .dropmenu {float: none; padding: 0 !important; }
+  #navMenu.responsive .dropdown {position: relative; top: 0; }
+  #navMenu.responsive .dropdown a { padding: 15px 20px 15px 35px; background-color: #9a4947; }
+  #navMenu.responsive .dropmenu { display: block; width: 100%; text-align: left;}
+  #navMenu.responsive a,
+  #navMenu.responsive .dropdown-content:hover .dropbtn,
+  .dropdown .dropbtn { background-color: #8a3c3a; color: #ffffff!important; }
+  .drop-active { background-color: #2f3335 !important; }
+  .show {display:block;}
+  
+  article.hero-home {
+	background: url(../images/home/hero-home.jpg) no-repeat center center;
+    background-size: auto 125px;
+	background-color: #f2f3ee;
+	height: 100px;
+  }
+  article { padding: 0; }
+  article.intro { padding: 2em; }
+  section { padding: 2em; }
+  article.hours-avail section { display: block; }
+  section.bus-hours {
+  	width: 100%;
+	box-sizing: border-box;
+	padding-top: 1em;
+	padding-bottom: 1em;
+  }
+  section.avail {
+  	display: table-cell;
+	padding-top: 1em;
+	width: 100%;
+  }
+  ul.avail-list { width: auto; min-width:  33%; }
+  article.pillars section { width: 100%; }
+  article.pillars section.first { padding: 1em 2em; }
+  article.pillars section.second { padding: 1em 2em; }
+  article.pillars section.third { padding: 1em 2em; }
+  
+  /* CONTACT PAGE */
+  body.contact .contact .info { width: 100%; padding: 0 2em; }
+  body.contact .contact .form { float: none; width: 100%; padding: 1em 2em 4em 2em; clear: both; }
+  
+  /* NEWS/PRESS PAGE */
+  article.hero-news-press {
+	background: url(../images/about/news-press/hero-news.jpg) no-repeat left center;
+    background-size: auto 125px;
+	background-color: #f2f3ee;
+	height: 100px;
+  }
+  .news-segment  { padding: 2em; display: block; }
+  .news-segment .photo { width: 100%; padding: 0; box-sizing: border-box; }
+  .news-segment .info { width: 100%; padding: 1em 0 0 0; box-sizing: border-box; }
+  
+  /* ABOUT OUR FARM PAGE */
+  .gallery img { width: 50%; box-sizing: border-box; padding-right: .5em; }
+  
+  /* FLOWERS PAGE */
+  article.hero-flowers {
+	background: url(../images/what-we-sell/flowers/hero-flowers.jpg) no-repeat left center;
+	background-color: #f2f3ee;
+	height: 100px;
+  }
+  .flower { display: block; padding: 1em 2em 1em; }
+  .flower .photo { width: 100%; box-sizing: border-box; padding-right: 0 !important; }
+  .flower .photo img { width: 100%; }
+  .flower .info { width: 100%; float: none; padding: 0 0 1em 0; box-sizing: border-box; }
+  
+  /* Style the buttons */
+  body.flowers .btn {
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    color: #4a362f;
+    background-color: #f2f3ee;
+    cursor: pointer;
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+	display: block;
+	margin: 0 auto;
+  }
+  body.flowers .btn.active {
+	margin: 0 auto !important;
+  }
+  body.flowers .btn.active:hover { color: #ffffff; }
+
+
+  footer section { float: none; }
+  footer section.contact { width: 100%; text-align: center; float: none; }
+  footer section.social { width: 100%; text-align: center; margin-top: .75em; float: none; padding-top: 0; }
+}
+
+@media screen and (max-width: 985px) {
+  ul.avail-list { width: auto; min-width:  50%; }
+}
+
+@media screen and (max-width: 438px) {
+  ul.avail-list { width: auto; min-width: 100%; }
+}
